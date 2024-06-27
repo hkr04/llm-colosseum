@@ -1,11 +1,11 @@
 run:
-	diambra -r ~/.diambra/roms run -l python3 script.py
+	diambra -r C:\Users\admin\.diambra\roms run -l python script.py
 
 demo:
-	diambra -r ~/.diambra/roms run -l python3 demo.py && python3 result.py
+	diambra -r C:\Users\admin\.diambra\roms run -l python demo.py && python result.py
 
 local:
-	diambra -r ~/.diambra/roms run -l python3 ollama.py
+	diambra -r C:\Users\admin\.diambra\roms run -l python ollama.py
 
 install:
 	pip3 install -r requirements.txt

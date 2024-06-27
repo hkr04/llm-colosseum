@@ -287,7 +287,7 @@ To increase your score, move toward the opponent and attack the opponent. To pre
         if os.getenv("DISABLE_LLM", "False") == "True":
             # Choose a random int from the list of moves
             logger.debug("DISABLE_LLM is True, returning a random move")
-            return [random.choice(list(MOVES.values()))]
+            return [random.choice(list(META_INSTRUCTIONS_WITH_LOWER.keys())).lower()]
 
         while len(valid_moves) == 0:
             llm_stream = self.call_llm()
